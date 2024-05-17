@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Самый точный и понятный гороскоп, что подарить, профориентация ребёнка, удобный заказ">
+    <meta name="keywords" content="гороскоп на сегодня, гороскоп совместимости, характер человека, знаки зодиака">
+    <meta name="robots" content="all">
+    <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon-120x120.svg">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon-512x512.png">
+    <title>Твой гороскоп, понятное описание, подарочное оформление</title>
+    <link rel="canonical" href="https://myhoroscop.ru/">
+</head>
+
+<body>
+    <div class="container">
+        <div class="fixed">
+            <div class="fixed__wrap wrap">
+                <div class="fixed__menu">
+                    <img src="../img/menu.png" width="30" height="30" alt="Меню">
+                </div>
+                <div class="fixed__repair">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="fixed__repair2">
+                    <p>Твой <span>гороскоп</span></p>
+                </div>
+                <div class="fixed__ico">
+                    <div class="fixed__ico2">
+                        <div class="fixed__vk">
+                            <a href="https://vk.com/id522570108" rel="nofollow" target="_blank">
+                                <img src="img/VK.png" alt="VK">
+                            </a>
+                        </div>
+                        <div class="fixed__telegramm">
+                            <a href="https://t.me/myhoroscop23" rel="nofollow" target="_blank">
+                                <img src="img/TEL.png" alt="Telegramm">
+                            </a>
+                        </div>
+                        <div class="fixed__lc">
+                            <a href="lc.html">
+                                <img src="img/LK.png" alt="Users cabinet">
+                            </a>
+                        </div>
+                        <div class="fixed__help">
+                            <a href="help.html">
+                                <img src="img/help.png" alt="Help">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="fixed__feedback">
+                            <a href="#openModal"><span>Обратная связь</span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed__wrap2 wrap">
+                <button class="fixed__btn">
+                    <a href="order.php"><span>ЗАКАЗАТЬ ГОРОСКОП</span></a>
+                </button>
+            </div>
+        </div>
+        <div class="main-menu wrap">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <button class="main-menu__close">Меню</button>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="order.php">Заказать гороскоп</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="help.html">Инструкция пользователя</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="pers.pdf" target="_blank">О персональных данных</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="oferta.pdf" target="_blank">Договор оферты</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="article.html">Статьи</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="contacts.html">Контакты</a>
+                </li>
+                <li class="main-menu__item">
+                    <button class="main-menu__btn">
+                        <a href="#openModal"><span>Обратная связь</span></a>
+                    </button>
+                </li>
+                <li>
+                    <div class="main-menu__ico">
+                        <div class="main-menu__vk">
+                            <a href="https://vk.com/id522570108" rel="nofollow" target="_blank">
+                                <img src="img/VK.png" alt="VK">
+                            </a>
+                        </div>
+                        <div class="main-menu__telegramm" rel="nofollow">
+                            <a href="https://t.me/myhoroscop23" rel="nofollow" target="_blank">
+                                <img src="img/TEL.png" alt="Telegramm">
+                            </a>
+                        </div>
+                        <div class="main-menu__lc">
+                            <a href="lc.html">
+                                <img src="img/LK.png" alt="Users cabinet">
+                            </a>
+                        </div>
+                        <div class="main-menu__help">
+                            <a href="help.html">
+                                <img src="img/help.png" alt="Help">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-headertop">
+                            <h3 class="modal-title">Отправьте нам сообщение</h3>
+                            <a href="#close" title="Close" class="modal-dialog__close">×</a>
+                        </div>
+                        <div class="modal-headerend">
+                            <p>
+                                Если у вас есть какие-то вопросы или предложения - <br>
+                                заполните форму ниже
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-container modal-body">
+                        <form id="feedback-form" action="/feedback/form.php" enctype="multipart/form-data" novalidate>
+                            <div class="form-row">
+                                <div class="form-group input-box">
+                                    <div>Ваше имя</div>
+                                    <input type="text" id="yuorname" name="name" class="form-control" minlength="3"
+                                        maxlength="30" required="required" autocomplete="off">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-group input-box">
+                                    <div>Электрон. почта</div>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        required="required" value="" placeholder="Email-адрес" autocomplete="off">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="form-group message-box">
+                                <div>Сообщение</div>
+                                <textarea id="message" name="message" class="form-control" required="required" rows="3"
+                                    placeholder="Сообщение (не менее 20 символов)" minlength="20"
+                                    maxlength="500"></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <!-- Капча -->
+                            <div class="form-group form-captcha">
+                                <img class="form-captcha__image" src="/feedback/captcha/captcha.php"
+                                    data-src="/feedback/captcha/captcha.php" width="132" height="46" alt="Капча">
+                                <div class="form-captcha__refresh">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16"
+                                        height="16">
+                                        <path fill="currentColor"
+                                            d="M440.65 12.57l4 82.77A247.16 247.16 0 0 0 255.83 8C134.73 8 33.91 94.92 12.29 209.82A12 12 0 0 0 24.09 224h49.05a12 12 0 0 0 11.67-9.26 175.91 175.91 0 0 1 317-56.94l-101.46-4.86a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12H500a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12h-47.37a12 12 0 0 0-11.98 12.57zM255.83 432a175.61 175.61 0 0 1-146-77.8l101.8 4.87a12 12 0 0 0 12.57-12v-47.4a12 12 0 0 0-12-12H12a12 12 0 0 0-12 12V500a12 12 0 0 0 12 12h47.35a12 12 0 0 0 12-12.6l-4.15-82.57A247.17 247.17 0 0 0 255.83 504c121.11 0 221.93-86.92 243.55-201.82a12 12 0 0 0-11.8-14.18h-49.05a12 12 0 0 0-11.67 9.26A175.86 175.86 0 0 1 255.83 432z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="form-group form-captcha__input">
+                                    <label for="captcha" class="control-label d-none">Код, показанный на
+                                        изображении</label>
+                                    <input type="text" name="captcha" maxlength="6" required="required" id="captcha"
+                                        class="form-control captcha" placeholder="* * * * * *" autocomplete="off"
+                                        value="">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="form-group form-agree form-check">
+                                <input class="custom-checkbox" type="checkbox" name="agree" id="agree" required
+                                    value="true">
+                                <label class="form-check-label" for="agree">Я принимаю условия <a href="oferta.pdf"
+                                        target="_blank">Пользовательского соглашения</a> и даю своё согласие на
+                                    обработку моих персональных данных</label>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-error form-error_hide">Исправьте данные и отправьте форму ещё раз.
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="header__modalbtn">Отправить сообщение</button>
+                            </div>
+                        </form>
+                        <div class="form-success form-success_hide">
+                            <div class="form-success__message">Сообщение успешно отправлено. Нажмите <button
+                                    type="button" class="form-success__btn">здесь</button>, если у Вас ещё есть вопросы.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__big">
+                <div class="header__wrap">
+                    <div class="cssSlider">
+                        <ul class="slides">
+                            <li id="slide3" class="container__imgb"><img src="img/biz.jpg" alt="Бизнес гороскоп"></li>
+                            <li id="slide2" class="container__imgb"><img src="img/two.jpg" alt="Гороскоп совместимости"></li>
+                            <li id="slide1" class="container__imgb"><img src="img/pers.jpg" alt="Личный гороскоп"></li>
+                        </ul>
+                        <ul class="thumbnails">
+                            <li><a href="#slide1" id="slide11" class="container__img">
+                                    <div class="hover-text-one">
+                                        <figure class="effect-text-one">
+                                            <img src="img/pers.jpg" alt="Личный гороскоп">
+                                            <figcaption>
+                                                <p>Личный</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#slide2" id="slide22" class="container__img">
+                                    <div class="hover-text-one">
+                                        <figure class="effect-text-one">
+                                            <img src="img/two.jpg" alt="Гороскоп совместимости">
+                                            <figcaption>
+                                                <p>Совместимости</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#slide3" id="slide33" class="container__img">
+                                    <div class="hover-text-one">
+                                        <figure class="effect-text-one">
+                                            <img src="img/biz.jpg" alt="Бизнес гороскоп">
+                                            <figcaption>
+                                                <p>Бизнес</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__text">
+                        <div class="header__title" id="header__title">
+                            <h1>Описание гороскопов</h1>
+                        </div>
+                        <div class="header__txt" id="header__txt">
+                            <div class="header__txtx">
+                                <h2>Личный гороскоп (рождения)</h2>
+                            </div>
+                            <p>Каждый человек уникален. Его отличает от других
+                                людей характер человека, внешность, цепь событий в жизни, иначе говоря судьба. Все эти
+                                отличительные
+                                черты закладываются в момент зачатия и рождения. Очень много значит для человека
+                                наследственность и менталитет, но бо&#x301;льшую часть формируют внешние факторы.
+                            </p>
+                            <p>Самый крупный фактор, который формирует человека, это взаимное расположение
+                                огромных масс - солнца, планет, звёзд. Они выступают
+                                в роли некоего шаблона, на который накладывается наследственная матрица каждого
+                                человека. Несколько тысяч лет самые образованные люди изучали и анализировали астрологические
+                                взаимосвязи и составили большой объём знаний, которыми мы сегодня пользуемся.</p>
+                            <p>Астрологическое описание личности, которое разрабатывают для каждого человека,
+                                основано на богатом астрологическом наследии является самым точным и полным гороскопом. Знаки зодиака только малая часть этого описания. 
+                                Его можно использовать для того, чтобы лучше понять себя и своих близких, понять их мотивы и поступки.</p>
+                            <p> Хорошая идея подарка для своих близких или коллег по работе - подарить гороскоп в подарочном оформлении.</p>
+                        </div>
+                        <div class="header__txtZ" id="header__txtZ">
+                            <div class="header__txtx">
+                                <h2>Личный гороскоп (рождения)</h2>
+                            </div>
+                            <p>Каждый человек уникален. Его отличает от других
+                                людей характер, внешность, цепь событий в жизни, иначе говоря судьба. Все эти
+                                отличительные
+                                черты закладываются в момент зачатия и рождения. Очень много значит для человека
+                                наследственность и менталитет, но бо&#x301;льшую часть формируют внешние факторы.
+                            </p>
+                            <p>Самый крупный фактор, который формирует человека, это взаимное расположение
+                                огромных масс - солнца, планет, звёзд. Они выступают
+                                в роли некоего шаблона, на который накладывается наследственная матрица каждого
+                                человека. Несколько тысяч лет самые образованные люди изучали и анализировали астрологические
+                                взаимосвязи и составили большой объём знаний, которыми мы сегодня пользуемся.</p>
+                            <p>Астрологическое описание личности, которое разрабатывают для каждого человека,
+                                основано на богатом астрологическом наследии является самым точным и полным гороскопом. Знаки зодиака только малая часть этого описания.
+                                Его можно использовать для того, чтобы лучше понять себя и своих близких, понять их мотивы и поступки.</p>
+                            <p> Хорошая идея подарка для своих близких или коллег по работе - подарить гороскоп в подарочном оформлении.</p>
+                        </div>
+                        <div class="header__txtZZ" id="header__txtZZ">
+                            <div class="header__txtx">
+                                <h2>Гороскоп совместимости</h2>
+                            </div>
+                            <p>Представляет собой самый точный и полный гороскоп совместимости двух людей по дате рождения, с использованием
+                                наложения двух натальных карт (рождения) и дальнейшим анализом аспектов планет и домов.
+                            </p>
+                            <p>Аспекты, которые формируются между двумя космограммами, показывают нам взаимное влияние
+                                друг на друга. В анализе аспектов, приведенных в этом гороскопе, одни и те же
+                                планетарные аспекты имеют разное значение и зависит от того, какая планета расположена в
+                                карте женщины, а какая в карте мужчины. По такому гороскопу можно понять, насколько
+                                подходят друг другу мужчина и женщина или партнёры. Можно сделать выводы о перспективах
+                                сотрудничества.</p>
+                            <p>Мы в своей жизни постоянно взаимодействуем с другими людьми, без общества мы не стали бы
+                                теми, кто мы сейчас есть. При этом мы постоянно задумываемся о природе наших отношений.
+                                Культура человека состоит почти полностью из этих отношений. </p>
+                        </div>
+                        <div class="header__txtZZZ" id="header__txtZZZ">
+                            <div class="header__txtx">
+                                <h2>Бизнес гороскоп или гороскоп события</h2>
+                            </div>
+                            <p>Успех в бизнесе, да и просто в любом деле зависит от многих факторов: от природных
+                                способностей и склонностей, силы характера, умения быстро принимать решения и
+                                ориентироваться в ситуации, и, конечно, благоприятного стечения обстоятельств.
+                            </p>
+                            <p>Астрологический прогноз даст подсказку, чем лучше заниматься, какую сферу деятельности
+                                выбрать, как добиться успеха в жизни, как и когда провести мероприятие ведь положением
+                                Солнца, планет, звёзд, знаков зодиака и точек небесной сферы в гороскопе определяются и деловые
+                                склонности человека, и те трудности, которые ему придется преодолеть на пути к вершинам.
+                            </p>
+                            <p>Самый достоверный гороскоп, можно использовать в анализе любого жизненного или рабочего события, будь
+                                то встреча, поездка, начало обучения и пр. Правильно выбрав дату события, поняв все
+                                нюансы и атмосферу события можно достичь значительно лучших результатов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__d">
+                    <div class="header__dbt">
+                        <div class="header__dbtt">
+                            <p><span>Требуемые данные:</span></p>
+                        </div>
+                        <div class="header__dbta">
+                            <div class="header__dbtb">
+                                <div class="header__dname">
+                                    <button class="header__btn">
+                                        <p><span>1. Имя</span></p>
+                                    </button>
+                                </div>
+                                <div class="header__dloc">
+                                    <button class="header__btn">
+                                        <p><span>2. Место рождения</span></p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="header__dbtc">
+                                <div class="header__ddate">
+                                    <button class="header__btn">
+                                        <p><span>3. Дата рождения</span></p>
+                                    </button>
+                                </div>
+                                <div class="header__dtime">
+                                    <button class="header__btn">
+                                        <p><span>4. Время рождения</span></p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__dbtn">
+                        <button class="header__btnz">
+                            <a href="order.php"><span>ЗАКАЗАТЬ ГОРОСКОП</span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="/feedback/js/form.min.js"></script>
+    <script>
+        ItcSubmitForm.getOrCreateInstance('form');
+        document.addEventListener('itc.successSendForm', (e) => {
+            const el = e.target.closest('.form-container').querySelector('.form-success');
+            el.classList.remove('form-success_hide');
+        });
+        document.querySelector('.form-success__btn').addEventListener('click', (e) => {
+            const el = e.target.closest('.form-container').querySelector('form');
+            const form = ItcSubmitForm.getOrCreateInstance(el);
+	    form.reset();
+            e.target.closest('.form-container').querySelector('.form-success').classList.add('form-success_hide');
+        });
+    </script>
+    <script>
+setTimeout(() => {
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(95278940, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+}, 3000)
+    </script>
+</body>
+
+</html>
